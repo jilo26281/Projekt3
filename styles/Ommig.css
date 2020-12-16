@@ -1,14 +1,17 @@
 * {box-sizing: border-box;}
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .wrapper {
-font:
 max-width: 3840px;
 min-height: 100vh;
 border: 1px;
 display: grid;
 grid-gap: 5px;
 background-color: white;
-padding: 10px;
 grid-template-rows: 1fr 4fr 1fr;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
 grid-template-areas:
@@ -32,6 +35,7 @@ grid-template-areas:
 }
 
 .navbar{
+  font-family: Oswald, sans-serif;
   grid-area: nav;
 }
 
@@ -40,10 +44,24 @@ grid-area: content;
 text-align: center;
 }
 
+h1 {
+font-family: Oswald, sans-serif;
+font-size: 45px;
+}
+
+p {
+  font-family: Noto Sans, sans-serif;
+  font-size: 20px;
+
+}
+
 .footer {
+  font-family: Oswald, sans-serif;
   grid-area: footer;
   background-color: #9B2B2B;
   margin-top: 100px;
+  text-align: center;
+  color: white;
 
 }
 
@@ -144,6 +162,11 @@ li a {
     max-width: 75%;
     height: auto;
 
+  }
+
+  article {
+    text-align: center;
+    padding: 5px;
   }
 
 }
