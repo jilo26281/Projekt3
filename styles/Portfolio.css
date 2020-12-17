@@ -300,12 +300,18 @@ li a {
 
   .wrapper{
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
     "nav nav"
     "content content"
     "pic pic"
-    "footer footer"
+    "content2 content2"
+    "pic2 pic2"
+    "content3 content3"
+    "pic3 pic3"
+    "content4 content4"
+    "pic4 pic4"
+    "footer footer";
   }
 
   nav ul {
@@ -318,7 +324,39 @@ li a {
     height: auto;
 
   }
+  .pic {
+    margin-left: 75px;
+    grid-area: pic;
+    margin-right: 0;
+    margin-bottom: 0;
+    max-width: 300px;
+    height: auto;
+   }
 
+  .pic2 {
+     grid-area: pic2;
+     margin-left: 75px;
+     margin-bottom: 0;
+     max-width: 300px;
+     height: auto;
+    }
+
+  .pic3 {
+      grid-area: pic3;
+      margin-left: 75px;
+      margin-right: 0;
+      margin-bottom: 0;
+      max-width: 300px;
+      height: auto;
+     }
+
+   .pic4 {
+     grid-area: pic4;
+     margin-left: 75px;
+     margin-bottom: 0;
+     max-width: 300px;
+     height: auto;
+    }
 
 
 }
