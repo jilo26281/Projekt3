@@ -12,7 +12,7 @@ border: 1px;
 display: grid;
 grid-gap: 5px;
 background-color: white;
-grid-template-rows: 1fr 1fr 1fr 1fr;
+grid-template-rows: 0.45fr 1fr 1fr 1fr;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-template-areas:
   "nav nav nav nav"
@@ -27,23 +27,43 @@ grid-template-areas:
 
 .pic {
   grid-area: pic;
+  margin-right: 100px;
+  margin-bottom: 200px;
  }
 
 .pic2 {
    grid-area: pic2;
+   margin-left: 100px;
+   margin-bottom: 200px;
   }
 
 .pic3 {
     grid-area: pic3;
+    margin-right: 100px;
+    margin-bottom: 200px;
    }
 
  .pic4 {
    grid-area: pic4;
+   margin-left: 100px;
+   margin-bottom: 200px;
   }
 
 .content {
 grid-area: content;
 text-align: center;
+margin: 30px;
+}
+
+h1 {
+font-family: Oswald, sans-serif;
+font-size: 45px;
+}
+
+p {
+  font-family: Noto Sans, sans-serif;
+  font-size: 20px;
+
 }
 
 .content2 {
@@ -51,9 +71,31 @@ grid-area: content2;
 text-align: center;
 }
 
+h1 {
+font-family: Oswald, sans-serif;
+font-size: 45px;
+}
+
+p {
+  font-family: Noto Sans, sans-serif;
+  font-size: 20px;
+
+}
+
 .content3 {
 grid-area: content3;
 text-align: center;
+}
+
+h1 {
+font-family: Oswald, sans-serif;
+font-size: 45px;
+}
+
+p {
+  font-family: Noto Sans, sans-serif;
+  font-size: 20px;
+
 }
 
 .content4 {
@@ -61,11 +103,24 @@ grid-area: content4;
 text-align: center;
 }
 
+h1 {
+font-family: Oswald, sans-serif;
+font-size: 45px;
+}
+
+p {
+  font-family: Noto Sans, sans-serif;
+  font-size: 20px;
+
+}
+
 .footer {
   grid-area: footer;
   background-color: #9B2B2B;
   margin-top: 100px;
   text-align: center;
+  font-family: Oswald, sans-serif;
+  color: white;
 
 }
 
