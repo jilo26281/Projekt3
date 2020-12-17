@@ -26,19 +26,6 @@ grid-template-areas:
   grid-area: pic;
  }
 
-
-.header {
-  padding: 3px;
-  background-color: #9B2B2B;
-  grid-area: headernav;
-
-}
-
-.navbar{
-  font-family: Oswald, sans-serif;
-  grid-area: nav;
-}
-
 .content {
 grid-area: content;
 text-align: center;
@@ -89,6 +76,8 @@ li a {
 }
 
 .navbar {
+  font-family: Oswald, sans-serif;
+  grid-area: nav;
   overflow: hidden;
   width: auto;
 }
@@ -120,7 +109,7 @@ li a {
     grid-template-areas:
     "nav nav nav nav"
     "content content content pic"
-    "footer footer"
+    "footer footer footer footer"
   }
 
   nav ul {
