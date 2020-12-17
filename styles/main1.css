@@ -5,7 +5,11 @@ body {
   padding: 0;
 }
 
+
 .wrapper {
+background-image: url("image6.jpg");
+background-size: cover;
+background-color: black;
 max-width: 3840px;
 min-height: 100vh;
 border: 1px;
@@ -13,18 +17,13 @@ display: grid;
 grid-gap: 5px;
 background-color: white;
 grid-template-rows: 1fr 4fr 1fr;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+grid-template-columns: 1fr 1fr 1fr;
 grid-template-areas:
-  "nav nav nav nav nav nav"
-  ". content content . pic . "
-  "footer footer footer footer footer footer";
+  "nav nav nav"
+  ". content . "
+  "footer footer footer";
 
 }
-
-
-.pic {
-  grid-area: pic;
- }
 
 .navbar {
    font-family: Oswald, sans-serif;
@@ -38,12 +37,26 @@ grid-area: content;
 text-align: center;
 }
 
+h1 {
+font-family: Oswald, sans-serif;
+font-size: 60px;
+color: white;
+}
+
+p {
+  font-family: Noto Sans, sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+
 .footer {
   grid-area: footer;
   background-color: #9B2B2B;
   margin-top: 100px;
   text-align: center;
   font-family: Oswald, sans-serif;
+  font-size: 20px;
   color: white;
 
 }
@@ -93,12 +106,12 @@ li a {
 @media (min-width: 601px) and (max-width: 1024px){
 
   .wrapper{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr 1fr;
     grid-template-areas:
-    "nav nav nav nav"
-    "content content content pic"
-    "footer footer footer footer"
+    "nav nav nav"
+    "content content content"
+    "footer footer footer"
   }
 
   nav ul {
