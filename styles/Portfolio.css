@@ -8,14 +8,14 @@ display: grid;
 grid-gap: 5px;
 background-color: white;
 padding: 10px;
-grid-template-rows: 1fr 4fr 4fr 4fr 4fr 4fr 1fr;
+grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 1fr;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
 grid-template-areas:
   "nav nav nav nav nav nav"
   ". content content . pic . "
-  ". pic2 . content2 content2 ."
+  ". pic2 . content2 content2 . "
   ". content3 content3 . pic3 . "
-  ". pic4 . content4 content4 ."
+  ". pic4 . content4 content4 . "
   "footer footer footer footer footer footer";
 
 }
@@ -38,19 +38,27 @@ grid-template-areas:
   }
 
 
-.header {
-  padding: 3px;
-  background-color: #9B2B2B;
-  grid-area: headernav;
-
-}
-
 .navbar{
   grid-area: nav;
 }
 
 .content {
 grid-area: content;
+text-align: center;
+}
+
+.content2 {
+grid-area: content2;
+text-align: center;
+}
+
+.content3 {
+grid-area: content3;
+text-align: center;
+}
+
+.content4 {
+grid-area: content4;
 text-align: center;
 }
 
