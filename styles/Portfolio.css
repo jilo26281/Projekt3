@@ -24,7 +24,6 @@ grid-template-areas:
 
 }
 
-
 .pic {
   grid-area: pic;
   margin-right: 100px;
@@ -45,7 +44,7 @@ grid-template-areas:
 
  .pic4 {
    grid-area: pic4;
-   margin-left: 100px;
+   margin-left: 400px;
    margin-bottom: 200px;
   }
 
@@ -176,12 +175,15 @@ li a {
 @media (min-width: 601px) and (max-width: 1024px){
 
   .wrapper{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 0.25fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    "nav nav nav nav"
-    "content content content pic"
-    "footer footer footer footer"
+    "nav nav"
+    "content pic"
+    "pic2 content2"
+    "content3 pic3"
+    "pic4  content4"
+    "footer footer";
   }
 
   nav ul {
@@ -189,13 +191,105 @@ li a {
   }
 
   article {
-    min-width: 200px;
+    max-width: 300px;
   }
 
   img {
-    margin-left: 200px;
-    max-width: 360px;
+    margin-left: 0;
+    max-width: 300px;
     height: auto;
+
+  }
+
+  .pic {
+    margin-top: 150px;
+    grid-area: pic;
+    margin-right: 0;
+    margin-bottom: 0;
+    max-width: 300px;
+    height: auto;
+   }
+
+  .pic2 {
+     grid-area: pic2;
+     margin-top: 150px;
+     margin-left: 0;
+     margin-bottom: 0;
+     max-width: 300px;
+     height: auto;
+    }
+
+  .pic3 {
+      grid-area: pic3;
+      margin-top: 100px;
+      margin-right: 0;
+      margin-bottom: 0;
+      max-width: 300px;
+      height: auto;
+     }
+
+   .pic4 {
+     grid-area: pic4;
+     margin-left: 0;
+     margin-bottom: 0;
+     max-width: 300px;
+     height: auto;
+    }
+
+  .content {
+  grid-area: content;
+  text-align: center;
+  margin: 0;
+  }
+
+  h1 {
+  font-family: Oswald, sans-serif;
+  }
+
+  p {
+    font-family: Noto Sans, sans-serif;
+
+  }
+
+  .content2 {
+  grid-area: content2;
+  text-align: center;
+  }
+
+  h1 {
+  font-family: Oswald, sans-serif;
+  }
+
+  p {
+    font-family: Noto Sans, sans-serif;
+
+  }
+
+  .content3 {
+  grid-area: content3;
+  text-align: center;
+  }
+
+  h1 {
+  font-family: Oswald, sans-serif;
+  }
+
+  p {
+    font-family: Noto Sans, sans-serif;
+
+  }
+
+  .content4 {
+  grid-area: content4;
+  text-align: center;
+  }
+
+  h1 {
+  font-family: Oswald, sans-serif;
+  }
+
+  p {
+    font-family: Noto Sans, sans-serif;
 
   }
 
