@@ -8,11 +8,14 @@ display: grid;
 grid-gap: 5px;
 background-color: white;
 padding: 10px;
-grid-template-rows: 1fr 4fr 1fr;
+grid-template-rows: 1fr 4fr 4fr 4fr 4fr 4fr 1fr;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
 grid-template-areas:
   "nav nav nav nav nav nav"
   ". content content . pic . "
+  ". pic2 . content2 content2 ."
+  ". content3 content3 . pic3 . "
+  ". pic4 . content4 content4 ."
   "footer footer footer footer footer footer";
 
 }
@@ -21,6 +24,18 @@ grid-template-areas:
 .pic {
   grid-area: pic;
  }
+
+.pic2 {
+   grid-area: pic2;
+  }
+
+.pic3 {
+    grid-area: pic3;
+   }
+
+ .pic4 {
+   grid-area: pic4;
+  }
 
 
 .header {
