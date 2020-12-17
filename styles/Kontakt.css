@@ -12,24 +12,40 @@ border: 1px;
 display: grid;
 grid-gap: 5px;
 background-color: white;
-grid-template-rows: 1fr 4fr 1fr;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+grid-template-rows: 1fr 1fr 1fr;
+grid-template-columns: 1fr 2fr 1fr;
 grid-template-areas:
-  "nav nav nav nav nav nav"
-  ". content content . pic . "
-  "footer footer footer footer footer footer";
+  "nav nav nav"
+  ". content . "
+  ". pic ."
+  "footer footer footer";
 
 }
 
 
 .pic {
   grid-area: pic;
+  max-width: 100%;
+  height: auto;
+
  }
 
 .content {
+background-color: #A8B183;
 grid-area: content;
 text-align: center;
 }
+
+h1 {
+font-family: Oswald, sans-serif;
+font-size: 45px;
+}
+
+p {
+  font-family: Noto Sans, sans-serif;
+  font-size: 20px;
+}
+
 
 .footer {
   grid-area: footer;
